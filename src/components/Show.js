@@ -42,7 +42,7 @@ function Show(props) {
             type="button"
             variant="primary"
             onClick={() => {
-              addProduct(data.id);
+              addProduct(data._id);
             }}
           >
             Add
