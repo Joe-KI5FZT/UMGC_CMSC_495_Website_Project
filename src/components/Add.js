@@ -49,9 +49,8 @@ function Add(props) {
       axios
         .post(customerAPIUrl, product)
         .then((result) => {
-          console.log("I am posting");
           setShowLoading(false);
-          props.history.push(`/show/${result.data.id}`);
+          props.history.push(`/`);
         })
         .then((response) => {
           resolve(response);
