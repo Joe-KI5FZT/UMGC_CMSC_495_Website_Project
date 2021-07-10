@@ -31,7 +31,7 @@ function Show(props) {
           <span className="sr-only">Loading...</span>
         </Spinner>
       )}
-      <Jumbotron>
+      <Jumbotron style={{ background: "transparent" }}>
         <h1>Selected Service</h1>
         <h2>{data.name}</h2>
         <h1>Price</h1>
@@ -42,7 +42,7 @@ function Show(props) {
             type="button"
             variant="primary"
             onClick={() => {
-              addProduct(data.id);
+              addProduct(data._id);
             }}
           >
             Add

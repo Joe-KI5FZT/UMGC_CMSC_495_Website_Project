@@ -6,6 +6,7 @@ import App from "./App";
 import Home from "./Home";
 import List from "./components/List";
 import Show from "./components/Show";
+import Add from "./components/Add";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route render={() => <Home />} exact path="/" />
         <Route render={() => <List />} path="/list" />
         <Route render={() => <Show />} path="/show/:id" />
+        <Route render={() => <Add />} path="/add/:id" />
       </div>
     </Router>
   </React.StrictMode>,
