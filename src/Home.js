@@ -1,13 +1,17 @@
 import "./style.css";
 import { isIE } from 'react-device-detect'
-if (isIE)
+
+export default function Home() {
+  
+  if (isIE)
     return (
       <div>
         <h1>Hi there. You’re using an outdated browser</h1>
         <p>For a safer and faster user experience use a modern browser like Chrome, Firefox, Safari, Opera, or Edge.</p>
       </div>
     )
-export default function Home() {
+  
+  
   return (
     <div>
       <div className="topnav">
