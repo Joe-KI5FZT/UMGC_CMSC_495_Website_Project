@@ -7,6 +7,8 @@ import Home from "./Home";
 import List from "./components/List";
 import Show from "./components/Show";
 import Add from "./components/Add";
+import Email from "./components/Email";
+import Customer from "./components/Customer";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -18,6 +20,8 @@ ReactDOM.render(
         <Route render={() => <List />} path="/list" />
         <Route render={() => <Show />} path="/show/:id" />
         <Route render={() => <Add />} path="/add/:id" />
+        <Route render={() => <Email />} path="/email" />
+        <Route render={() => <Customer />} path="/customer/:id" />
       </div>
     </Router>
   </React.StrictMode>,

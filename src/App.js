@@ -10,8 +10,8 @@ function App() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/list">List of Services</Nav.Link>
-          <Nav.Link href="/create">Add Product</Nav.Link>
+          <Nav.Link href="/list">Browse Services</Nav.Link>
+          <Nav.Link href="/email">Get Price Quote</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
