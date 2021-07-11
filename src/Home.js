@@ -1,5 +1,12 @@
 import "./style.css";
-
+import { isIE } from 'react-device-detect'
+if (isIE)
+    return (
+      <div>
+        <h1>Hi there. You’re using an outdated browser</h1>
+        <p>For a safer and faster user experience use a modern browser like Chrome, Firefox, Safari, Opera, or Edge.</p>
+      </div>
+    )
 export default function Home() {
   return (
     <div>
@@ -70,7 +77,7 @@ export default function Home() {
                     <a href="/email">Get a Quote</a>
                   </h3>
                   <p>
-                    Generate an estimated cost quote on your chosen services.
+                    Retrieve an estimated cost quote on your chosen services.
                   </p>
                 </div>
               </div>
