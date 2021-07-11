@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <div className="topnav">
-        <input type="text" placeholder="Search..." />
+        <input type="text" placeholder="Search offered services..." />
       </div>
       <header id="mainheader" className="grid">
         <div className="bg-image"></div>
@@ -70,7 +70,7 @@ export default function Home() {
                     <a href="/email">Get a Quote</a>
                   </h3>
                   <p>
-                    Generate an estimated cost quote on your chosen service.
+                    Generate an estimated cost quote on your chosen services.
                   </p>
                 </div>
               </div>
