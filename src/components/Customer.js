@@ -7,12 +7,26 @@ import { withRouter } from "react-router-dom";
 function Customer(props) {
   const [data, setData] = useState([]);
   const [showLoading, setShowLoading] = useState(true);
+  const [total, setTotal] = useState("");
+
   const apiUrl = `https://umgc-customer-495.herokuapp.com/customer?email=${props.match.params.id}`;
+
+  function getArraySum(a) {
+    var total = 0;
+    for (var i in a) {
+      total += a[i];
+    }
+    return total;
+  }
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(apiUrl);
       setData(result.data);
+      const set = result.data;
+      const prices = set.map((item) => item.price);
+      const arrayTotal = getArraySum(prices);
+      setTotal(arrayTotal);
       setShowLoading(false);
     };
     fetchData();
@@ -35,6 +49,11 @@ function Customer(props) {
           </ListGroup.Item>
         ))}
       </ListGroup>
+      <br />
+      <div>
+        <h3>Total</h3>
+        <p>${total}</p>
+      </div>
     </div>
   );
 }
