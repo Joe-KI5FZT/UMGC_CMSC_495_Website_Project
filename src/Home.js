@@ -1,5 +1,5 @@
 import "./style.css";
-import { isIE } from 'react-device-detect'
+import { isIE } from 'react-device-detect';
 
 export default function Home() {
   
