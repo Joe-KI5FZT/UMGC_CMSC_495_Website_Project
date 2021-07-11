@@ -27,7 +27,7 @@ function Customer(props) {
           </Spinner>
         </div>
       )}
-      <h3>List of Services and Price Total for ${props.match.params.id}</h3>
+      <h3>List of Services and Price Total for {props.match.params.id}</h3>
       <ListGroup>
         {data.map((item, id) => (
           <ListGroup.Item key={id} action>
