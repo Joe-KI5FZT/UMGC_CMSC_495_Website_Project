@@ -67,7 +67,7 @@ export default function Home() {
                 />
                 <div className="card-content">
                   <h3 className="card-title">
-                    <a href="">Get a Quote</a>
+                    <a href="/email">Get a Quote</a>
                   </h3>
                   <p>
                     Generate an estimated cost quote on your chosen service.

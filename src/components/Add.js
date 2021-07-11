@@ -50,6 +50,7 @@ function Add(props) {
         .post(customerAPIUrl, product)
         .then((result) => {
           setShowLoading(false);
+          alert("Item has been added to your quote.");
           props.history.push(`/`);
         })
         .then((response) => {
