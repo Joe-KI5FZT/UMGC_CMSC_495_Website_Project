@@ -12,6 +12,18 @@ import Customer from "./components/Customer";
 import reportWebVitals from "./reportWebVitals";
 import { isIE } from 'react-device-detect';
 
+
+
+if ((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {
+  return (
+    <div>
+      <h1>Hi there. You’re using an outdated browser</h1>
+      <p>For a safer and faster user experience use a modern browser like Chrome, Firefox, Safari, Opera, or Edge.</p>
+    </div>
+  );
+}
+
+/*
 if (isIE) {
   return (
     <div>
@@ -20,7 +32,7 @@ if (isIE) {
     </div>
   )
 }
-
+*/
 ReactDOM.render(
   <React.StrictMode>
     <Router>
