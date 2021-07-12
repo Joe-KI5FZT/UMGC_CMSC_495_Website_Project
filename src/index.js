@@ -10,6 +10,16 @@ import Add from "./components/Add";
 import Email from "./components/Email";
 import Customer from "./components/Customer";
 import reportWebVitals from "./reportWebVitals";
+import { isIE } from 'react-device-detect';
+
+if (isIE) {
+  return (
+    <div>
+      <h1>Hi there. You’re using an outdated browser</h1>
+      <p>For a safer and faster user experience use a modern browser like Chrome, Firefox, Safari, Opera, or Edge.</p>
+    </div>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
